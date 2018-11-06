@@ -1,0 +1,5 @@
+edu/stanford/crypto/cs251/transactions/MultiSigTransaction.class
+edu/stanford/crypto/cs251/transactions/LinearEquationTransaction.class
+edu/stanford/crypto/cs251/transactions/PayToPubKey.class
+edu/stanford/crypto/cs251/transactions/PayToPubKeyHash.class
+edu/stanford/crypto/cs251/transactions/ScriptTransaction.class
