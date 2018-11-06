@@ -23,12 +23,11 @@ public class LinearEquationTransaction extends ScriptTransaction {
 
     @Override
     public Script createInputScript() {
-        // TODO: Create a script that can be spend by two numbers x and y such that x+y=first 4 digits of your iitk roll and |x-y|=last 4 digits of your suid (perhaps +1)
-        // my roll number is: 150716
+        
         ScriptBuilder builder = new ScriptBuilder();
         BigInteger firstHalf,secondHalf;
-        firstHalf=new BigInteger("150");
-        secondHalf=new BigInteger("716");
+        firstHalf=new BigInteger("58");
+        secondHalf=new BigInteger("11");
         builder.op(OP_2DUP);
         builder.op(OP_ADD);
         builder.data(encode(firstHalf));
@@ -45,8 +44,8 @@ public class LinearEquationTransaction extends ScriptTransaction {
         // TODO: Create a spending script
         ScriptBuilder builder = new ScriptBuilder();
         BigInteger x,y;
-        x=new BigInteger("433");
-        y=new BigInteger("-283");
+        x=new BigInteger("58");
+        y=new BigInteger("11");
         builder.data(encode(x));
         builder.data(encode(y));
         return builder.build();
